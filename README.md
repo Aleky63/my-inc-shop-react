@@ -1,1 +1,0 @@
-# my-incubat-shop-react
