@@ -50,5 +50,7 @@ export default tseslint.config({
 ```
 
 cd shop
+
 pnpm install
+
 pnpm run dev
