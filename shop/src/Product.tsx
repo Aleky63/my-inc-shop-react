@@ -4,11 +4,13 @@ import { Link, useParams } from "react-router";
 import type { ProductType } from "./BestSellers.tsx";
 import rating from "./assets/img/rating.svg";
 import cartWhite from "./assets/img/cartWhite.svg";
+import cart from "./assets/img/cart.svg";
 import arrowBack from "./assets/img/arrowBack.svg";
 import { Reviews } from "./Reviews";
 
 export const Product = () => {
   const [product, setProduct] = useState<ProductType | null>(null);
+  const [isProductInCart, setIsProductInCart] = useState<boolean>(false);
   const { productId } = useParams();
 
   useEffect(() => {
@@ -18,6 +20,11 @@ export const Product = () => {
       )
       .then((res) => setProduct(res.data));
   }, [productId]);
+
+  const addProductToCartHandler = () => {
+    alert("Товар успешно добавлен в корзину");
+    setIsProductInCart(true);
+  };
 
   if (product === null) {
     return <h2>Продукт еще грузится ...</h2>;
@@ -46,9 +53,12 @@ export const Product = () => {
             <p>{product.category}</p>
           </div>
           <p className="description">{product.description}</p>
-          <button>
-            <img src={cartWhite} alt="" />
-            Add to cart
+          <button
+            onClick={addProductToCartHandler}
+            className={`button ${isProductInCart ? "active" : ""}`}
+          >
+            <img src={isProductInCart ? cart : cartWhite} alt="cart icon" />
+            {isProductInCart ? "Go to cart" : "Add to cart"}
           </button>
         </div>
       </div>
