@@ -8,7 +8,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 30px 0;
 }
 
 /* Продукты */
@@ -32,7 +32,7 @@
 /* Карточка */
 .card {
   width: 303px;
-  border: 3px solid #f6f7f8;
+  border: 3px solid #e5e5e6;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -63,7 +63,7 @@
 
 .card button {
   background-color: white;
-  border: 1px solid #2068f8;
+  border: 1px solid #3073fa;
   border-radius: 2px;
   padding: 10px 0;
   width: 80%;

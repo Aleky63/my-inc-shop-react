@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import avatarIcon from "./assets/img/avatarIcon.svg";
 
 type Review = {
