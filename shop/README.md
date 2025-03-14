@@ -49,6 +49,7 @@ export default tseslint.config({
 });
 ```
 
+cd my-inc-shop-react
 cd shop
 
 pnpm install
