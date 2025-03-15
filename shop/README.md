@@ -55,3 +55,5 @@ cd shop
 pnpm install
 
 pnpm run dev
+
+<!-- https://safronman.gitbook.io/react-intro-lesson -->
