@@ -57,13 +57,13 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: #2068f8;
+  color: #376fe0;
   margin-bottom: 30px;
 }
 
 .card button {
   background-color: white;
-  border: 1px solid #356fe4;
+  border: 1px solid #2e5db9;
   border-radius: 2px;
   padding: 10px 0;
   width: 80%;
@@ -90,7 +90,7 @@
   color: #0d0c0b;
   text-decoration: none;
   display: block;
-  margin: 36px 0;
+  margin: 35px 0;
 }
 
 /* Продукт */
