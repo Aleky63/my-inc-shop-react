@@ -18,7 +18,7 @@
 
 .bestSeller h2 {
   font-size: 36px;
-  color: #22262a;
+  color: #38424d;
 }
 
 /*Карточки*/
@@ -32,7 +32,7 @@
 /* Карточка */
 .card {
   width: 303px;
-  border: 3px solid #bbbbc5;
+  border: 3px solid #9f9faf;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -48,7 +48,7 @@
   font-size: 18px;
   text-align: center;
   margin-bottom: 0px;
-  color: #31488d;
+  color: #3c5ab3;
   padding: 0 36px;
   flex: 1;
 }
